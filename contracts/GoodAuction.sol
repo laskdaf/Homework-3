@@ -46,5 +46,6 @@ contract GoodAuction is AuctionInterface {
 	/* Give people their funds back */
 	function () payable {
 		// YOUR CODE HERE
+		msg.sender.transfer(msg.value);
 	}
 }
